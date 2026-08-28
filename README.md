@@ -27,6 +27,3 @@ To add a new video, copy an existing `.v-card` block in `videos.html` and swap i
 
 To add a new project, copy an existing `.project-card` block in `projects.html`. Add a `<a class="repo-link" href="...">View on GitHub →</a>` line once the matching repo is public.
 
-## Profile photo
-
-Drop a `profile.jpg` in the repo root and push. The avatar picks it up automatically; if the file is missing it falls back to initials.
