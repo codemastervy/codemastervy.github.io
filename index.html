@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Isherveer Bhullar — About</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script>try{if(localStorage.getItem('theme')==='light')document.documentElement.classList.add('light');}catch(e){}</script>
+</head>
+<body>
+
+<div class="blob blob1"></div>
+<div class="blob blob2"></div>
+<div class="blob blob3"></div>
+<div class="blob blob4"></div>
+<div class="grain"></div>
+
+<div class="topbar glass">
+  <div class="brand">
+    <div class="ring"><b>IB</b></div>
+    <div>
+      <div class="name">Isherveer Bhullar</div>
+      <div class="rec"><span class="dot"></span>REC · PORTFOLIO</div>
+    </div>
+  </div>
+  <div class="nav-pill" id="tabs">
+    <a class="nav-btn active" href="index.html">About</a>
+    <a class="nav-btn" href="resume.html">Resume</a>
+    <a class="nav-btn" href="videos.html">Videos</a>
+    <a class="nav-btn" href="projects.html">Projects</a>
+    <a class="nav-btn" href="credentials.html">Credentials</a>
+    <a class="nav-btn" href="contact.html">Contact</a>
+  </div>
+  <button class="icon-btn" id="themeToggle" onclick="toggleTheme()">🌙</button>
+</div>
+
+<div class="layout">
+  <!-- SIDEBAR -->
+  <aside class="sidebar glass">
+    <div class="avatar-wrap"><div class="avatar"><img src="profile.jpg" alt="Isherveer Bhullar" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"><b style="display:none;">IB</b></div></div>
+    <h1>Isherveer Bhullar</h1>
+    <span class="role-chip">CS STUDENT · DRONE PILOT · EDITOR</span>
+    <div class="status"><span class="dot"></span> Open to summer internships</div>
+
+    <div class="info"><div class="info-label">Email</div><div class="info-value">isherveer@gmail.com</div></div>
+    <div class="info"><div class="info-label">Phone</div><div class="info-value">027 554 2572</div></div>
+    <div class="info"><div class="info-label">Location</div><div class="info-value">Rotorua, Bay of Plenty, NZ</div></div>
+
+    <hr class="sep">
+    <div class="socials">
+      <a class="social-btn" href="https://github.com/codemastervy" target="_blank" rel="noopener">GitHub</a>
+      <a class="social-btn" href="https://www.linkedin.com/in/isherveer-bhullar-572016202/" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+    <a class="cta" href="mailto:isherveer@gmail.com">Get in touch →</a>
+    <div class="clock" id="clock">--:--:--</div>
+  </aside>
+
+  <!-- MAIN -->
+  <main>
+
+    <section class="panel active" id="about">
+      <div class="card glass">
+        <span class="eyebrow">✦ ABOUT</span>
+        <h2 class="headline">I build with code —<br>and I shoot through glass.</h2>
+        <p class="lede">
+          First year Bachelor of Applied Computing student at the University of Waikato, majoring in Computer Science.
+          I'm also a licensed drone pilot and a video editor working in DaVinci Resolve, with a growing background in
+          retail, customer service, and admin. I split my time between screens: one writing code, the other cutting footage.
+        </p>
+        <div class="btn-row">
+          <a class="btn-p" href="videos.html">Watch my work →</a>
+          <a class="btn-s" href="contact.html">Get in touch</a>
+        </div>
+
+        <div class="stat-grid">
+          <div class="stat glass">
+            <div class="num">3+ yrs</div>
+            <div class="label">Retail & customer service</div>
+            <div class="desc">The Warehouse, Noel Leeming, Mitchell Downs Tavern.</div>
+          </div>
+          <div class="stat glass">
+            <div class="num">Licensed</div>
+            <div class="label">Drone pilot</div>
+            <div class="desc">Aerial footage and photography, shot and flown myself.</div>
+          </div>
+          <div class="stat glass">
+            <div class="num">Resolve</div>
+            <div class="label">Video editor</div>
+            <div class="desc">Colour, cuts, and sound edited in DaVinci Resolve.</div>
+          </div>
+          <div class="stat glass">
+            <div class="num">2</div>
+            <div class="label">Papers represented</div>
+            <div class="desc">Elected Class Rep for COMPX102 and MRKTG101 at Waikato.</div>
+          </div>
+        </div>
+
+        <div class="section-tag"><span class="rule"></span> THE LONGER VERSION</div>
+        <h3 class="sub">Two crafts, one focus</h3>
+        <div class="two-col">
+          <p>
+            I'm a first year Applied Computing student at the University of Waikato, getting a solid grounding in
+            computer science. Alongside that I've spent years in customer-facing roles — The Warehouse, Noel Leeming,
+            and Mitchell Downs Tavern — which taught me to stay steady under pressure and deal with people properly.
+          </p>
+          <p>
+            Outside study, I fly and edit — I hold a drone pilot licence and shoot and edit video and photography,
+            working in DaVinci Resolve. I also helped build Unity, a wellbeing app for NZ students, through the App
+            Launchpad programme, and I'm currently the elected Class Rep for two papers in my first semester.
+          </p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+</div>
+
+<footer>
+  <div>
+    <div class="fname">Isherveer Bhullar</div>
+    <div>Computer science student, drone pilot, and video editor.</div>
+    <div class="fnote">ROTORUA, NZ · OPEN TO SUMMER INTERNSHIPS</div>
+  </div>
+  <div style="display:flex; gap:50px; flex-wrap:wrap;">
+    <div style="display:flex; flex-direction:column; gap:8px;">
+      <a href="index.html">About</a>
+      <a href="resume.html">Resume</a>
+      <a href="videos.html">Videos</a>
+    </div>
+    <div style="display:flex; flex-direction:column; gap:8px;">
+      <a href="projects.html">Projects</a>
+      <a href="credentials.html">Credentials</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

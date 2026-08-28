@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Isherveer Bhullar — Projects</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script>try{if(localStorage.getItem('theme')==='light')document.documentElement.classList.add('light');}catch(e){}</script>
+</head>
+<body>
+
+<div class="blob blob1"></div>
+<div class="blob blob2"></div>
+<div class="blob blob3"></div>
+<div class="blob blob4"></div>
+<div class="grain"></div>
+
+<div class="topbar glass">
+  <div class="brand">
+    <div class="ring"><b>IB</b></div>
+    <div>
+      <div class="name">Isherveer Bhullar</div>
+      <div class="rec"><span class="dot"></span>REC · PORTFOLIO</div>
+    </div>
+  </div>
+  <div class="nav-pill" id="tabs">
+    <a class="nav-btn" href="index.html">About</a>
+    <a class="nav-btn" href="resume.html">Resume</a>
+    <a class="nav-btn" href="videos.html">Videos</a>
+    <a class="nav-btn active" href="projects.html">Projects</a>
+    <a class="nav-btn" href="credentials.html">Credentials</a>
+    <a class="nav-btn" href="contact.html">Contact</a>
+  </div>
+  <button class="icon-btn" id="themeToggle" onclick="toggleTheme()">🌙</button>
+</div>
+
+<div class="layout">
+  <!-- SIDEBAR -->
+  <aside class="sidebar glass">
+    <div class="avatar-wrap"><div class="avatar"><img src="profile.jpg" alt="Isherveer Bhullar" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"><b style="display:none;">IB</b></div></div>
+    <h1>Isherveer Bhullar</h1>
+    <span class="role-chip">CS STUDENT · DRONE PILOT · EDITOR</span>
+    <div class="status"><span class="dot"></span> Open to summer internships</div>
+
+    <div class="info"><div class="info-label">Email</div><div class="info-value">isherveer@gmail.com</div></div>
+    <div class="info"><div class="info-label">Phone</div><div class="info-value">027 554 2572</div></div>
+    <div class="info"><div class="info-label">Location</div><div class="info-value">Rotorua, Bay of Plenty, NZ</div></div>
+
+    <hr class="sep">
+    <div class="socials">
+      <a class="social-btn" href="https://github.com/codemastervy" target="_blank" rel="noopener">GitHub</a>
+      <a class="social-btn" href="https://www.linkedin.com/in/isherveer-bhullar-572016202/" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+    <a class="cta" href="mailto:isherveer@gmail.com">Get in touch →</a>
+    <div class="clock" id="clock">--:--:--</div>
+  </aside>
+
+  <!-- MAIN -->
+  <main>
+
+    <section class="panel active" id="projects">
+      <div class="card glass">
+        <span class="eyebrow">✦ PROJECTS</span>
+        <h2 class="headline">Small in number, real in impact.</h2>
+        <p class="lede">Shipped work, ongoing infrastructure, and a leadership role treated like a project.</p>
+        <div class="btn-row" style="margin-bottom:6px;">
+          <a class="btn-s" href="https://github.com/codemastervy" target="_blank" rel="noopener">View all repos on GitHub →</a>
+        </div>
+
+        <div class="filter-row">
+          <button class="filter-btn active">Everything 6</button>
+          <button class="filter-btn">App dev 2</button>
+          <button class="filter-btn">Systems 1</button>
+          <button class="filter-btn">Media 2</button>
+          <button class="filter-btn">Leadership 1</button>
+        </div>
+
+        <div class="project-grid">
+          <div class="project-card">
+            <div class="project-thumb"></div>
+            <div class="badge-row"><span class="badge b-cat">App dev</span><span class="badge b-active">Active</span></div>
+            <h4>Unity — Mental Health Super App</h4>
+            <div class="project-date">March 2023 – Present</div>
+            <p>A mental health and wellbeing app for kids and teens, with plans for rollout across New Zealand schools. Built with a team through the App Launchpad programme.</p>
+            <div class="chip-row"><span class="chip">App Launchpad</span><span class="chip">Team project</span><span class="chip">Mental health</span></div>
+          </div>
+          <div class="project-card">
+            <div class="project-thumb"></div>
+            <div class="badge-row"><span class="badge b-cat">Leadership</span><span class="badge b-active">Active</span></div>
+            <h4>Class Representative Programme</h4>
+            <div class="project-date">July 2026 – Present</div>
+            <p>Elected Class Rep for both COMPX102 and MRKTG101 in my first semester — running feedback loops between classmates and course staff for two papers at once.</p>
+            <div class="chip-row"><span class="chip">Waikato</span><span class="chip">Communication</span></div>
+          </div>
+          <div class="project-card">
+            <div class="project-thumb"></div>
+            <div class="badge-row"><span class="badge b-cat">App dev</span><span class="badge b-active">Live</span></div>
+            <h4>Simple SMB File Browser</h4>
+            <div class="project-date">Aug 2026 – Present</div>
+            <p>A multiplatform SwiftUI app for browsing SMB2/3 network shares on iPhone, iPad, and Mac — upload, download, rename, move, batch operations, and dual-pane browsing, built on AMSMB2.</p>
+            <div class="chip-row"><span class="chip">SwiftUI</span><span class="chip">iOS & macOS</span><span class="chip">Networking</span></div>
+            <a class="repo-link" href="https://github.com/codemastervy/simple-smb-file-browser" target="_blank" rel="noopener">View on GitHub →</a>
+          </div>
+          <div class="project-card">
+            <div class="project-thumb"></div>
+            <div class="badge-row"><span class="badge b-cat">Systems</span><span class="badge b-pending">Repo coming soon</span></div>
+            <h4>Home Server — Self-Hosted Infrastructure</h4>
+            <div class="project-date">Self-hosted · Ongoing</div>
+            <p>Ubuntu + Docker running eleven containers — photo backup, network-wide DNS filtering, Time Machine backups, and home automation. Includes an upstream Samba auth bug I root-caused and a systemd fix verified with a real reboot test.</p>
+            <div class="chip-row"><span class="chip">Docker</span><span class="chip">Linux</span><span class="chip">Networking</span></div>
+          </div>
+          <div class="project-card">
+            <div class="project-thumb"></div>
+            <div class="badge-row"><span class="badge b-cat">Media</span><span class="badge b-pending">Repo coming soon</span></div>
+            <h4>Live Event Streaming Runbook</h4>
+            <div class="project-date">Volunteer AV crew</div>
+            <p>A field-tested runbook for multi-camera live event streaming with OBS Studio, a Blackmagic ATEM Mini, and external audio interfacing — written so the next volunteer can run it without me there.</p>
+            <div class="chip-row"><span class="chip">OBS Studio</span><span class="chip">ATEM Mini</span><span class="chip">Live production</span></div>
+          </div>
+          <div class="project-card">
+            <div class="project-thumb"></div>
+            <div class="badge-row"><span class="badge b-cat">Media</span><span class="badge b-pending">Repo coming soon</span></div>
+            <h4>Freelance Video & Design Portfolio</h4>
+            <div class="project-date">Freelance</div>
+            <p>Freelance video editing and graphic design process alongside the CS degree — briefing, rough cuts, colour and audio workflow, and delivering in whatever format the destination platform actually needs.</p>
+            <div class="chip-row"><span class="chip">Video editing</span><span class="chip">Design</span><span class="chip">Freelance</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+</div>
+
+<footer>
+  <div>
+    <div class="fname">Isherveer Bhullar</div>
+    <div>Computer science student, drone pilot, and video editor.</div>
+    <div class="fnote">ROTORUA, NZ · OPEN TO SUMMER INTERNSHIPS</div>
+  </div>
+  <div style="display:flex; gap:50px; flex-wrap:wrap;">
+    <div style="display:flex; flex-direction:column; gap:8px;">
+      <a href="index.html">About</a>
+      <a href="resume.html">Resume</a>
+      <a href="videos.html">Videos</a>
+    </div>
+    <div style="display:flex; flex-direction:column; gap:8px;">
+      <a href="projects.html">Projects</a>
+      <a href="credentials.html">Credentials</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
