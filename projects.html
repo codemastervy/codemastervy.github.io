@@ -70,29 +70,29 @@
         </div>
 
         <div class="filter-row">
-          <button class="filter-btn active">Everything 12</button>
-          <button class="filter-btn">App dev 3</button>
-          <button class="filter-btn">Systems 3</button>
-          <button class="filter-btn">Media 2</button>
-          <button class="filter-btn">Leadership 1</button>
+          <button class="filter-btn active" data-filter="all">Everything <span class="filter-count">12</span></button>
+          <button class="filter-btn" data-filter="app-dev">App dev <span class="filter-count">4</span></button>
+          <button class="filter-btn" data-filter="systems">Systems <span class="filter-count">5</span></button>
+          <button class="filter-btn" data-filter="media">Media <span class="filter-count">2</span></button>
+          <button class="filter-btn" data-filter="leadership">Leadership <span class="filter-count">1</span></button>
         </div>
 
         <div class="project-grid">
-          <div class="project-card">
+          <div class="project-card" data-category="app-dev">
             <div class="project-thumb"></div>
             <h4>Unity: Mental Health Super App</h4>
             <div class="project-date">March 2023 to Present</div>
             <p>A mental health and wellbeing app for kids and teens, with plans for rollout across New Zealand schools. Built with a team through the App Launchpad programme.</p>
             <div class="chip-row"><span class="chip">App Launchpad</span><span class="chip">Team project</span><span class="chip">Mental health</span></div>
           </div>
-          <div class="project-card">
+          <div class="project-card" data-category="leadership">
             <div class="project-thumb"></div>
             <h4>Class Representative Programme</h4>
             <div class="project-date">July 2026 to Present</div>
             <p>Elected Class Rep for both COMPX102 and MRKTG101 in my first semester, running feedback loops between classmates and course staff for two papers at once.</p>
             <div class="chip-row"><span class="chip">Waikato</span><span class="chip">Communication</span></div>
           </div>
-          <div class="project-card">
+          <div class="project-card" data-category="app-dev">
             <div class="project-thumb"></div>
             <h4>Simple SMB File Browser</h4>
             <div class="project-date">Aug 2026 to Present</div>
@@ -100,7 +100,7 @@
             <div class="chip-row"><span class="chip">SwiftUI</span><span class="chip">iOS & macOS</span><span class="chip">Networking</span></div>
             <a class="repo-link" href="https://github.com/codemastervy/simple-smb-file-browser" target="_blank" rel="noopener">View on GitHub →</a>
           </div>
-          <div class="project-card">
+          <div class="project-card" data-category="app-dev">
             <div class="project-thumb"></div>
             <h4>SMB Web Client</h4>
             <div class="project-date">Aug 2026 to Present</div>
@@ -108,7 +108,7 @@
             <div class="chip-row"><span class="chip">Docker</span><span class="chip">Python</span><span class="chip">Self-hosted</span></div>
             <a class="repo-link" href="https://github.com/codemastervy/smb-web-client" target="_blank" rel="noopener">View on GitHub →</a>
           </div>
-          <div class="project-card">
+          <div class="project-card" data-category="systems">
             <div class="project-thumb"></div>
             <h4>NAS Dashboard</h4>
             <div class="project-date">Aug 2026 to Present</div>
@@ -116,7 +116,7 @@
             <div class="chip-row"><span class="chip">Docker</span><span class="chip">Python</span><span class="chip">Self-hosted</span></div>
             <a class="repo-link" href="https://github.com/codemastervy/nas-dashboard" target="_blank" rel="noopener">View on GitHub →</a>
           </div>
-          <div class="project-card">
+          <div class="project-card" data-category="systems">
             <div class="project-thumb"></div>
             <h4>Home Server: Self-Hosted Infrastructure</h4>
             <div class="project-date">Self-hosted, ongoing</div>
@@ -124,7 +124,7 @@
             <div class="chip-row"><span class="chip">Docker</span><span class="chip">Linux</span><span class="chip">Networking</span></div>
             <a class="repo-link" href="https://github.com/codemastervy/homelab-server" target="_blank" rel="noopener">View on GitHub →</a>
           </div>
-          <div class="project-card">
+          <div class="project-card" data-category="systems">
             <div class="project-thumb"></div>
             <h4>Dependency Update Workflow</h4>
             <div class="project-date">Aug 2026 to Present</div>
@@ -132,7 +132,7 @@
             <div class="chip-row"><span class="chip">GitHub Actions</span><span class="chip">CI/CD</span><span class="chip">Python</span></div>
             <a class="repo-link" href="https://github.com/codemastervy/dependency-update-workflow" target="_blank" rel="noopener">View on GitHub →</a>
           </div>
-          <div class="project-card">
+          <div class="project-card" data-category="media">
             <div class="project-thumb"></div>
             <h4>Live Event Streaming Runbook</h4>
             <div class="project-date">Volunteer AV crew</div>
@@ -140,7 +140,7 @@
             <div class="chip-row"><span class="chip">OBS Studio</span><span class="chip">ATEM Mini</span><span class="chip">Live production</span></div>
             <a class="repo-link" href="https://github.com/codemastervy/live-streaming-guide" target="_blank" rel="noopener">View on GitHub →</a>
           </div>
-          <div class="project-card">
+          <div class="project-card" data-category="media">
             <div class="project-thumb"></div>
             <h4>Freelance Video & Design Portfolio</h4>
             <div class="project-date">Freelance</div>
@@ -148,7 +148,7 @@
             <div class="chip-row"><span class="chip">Video editing</span><span class="chip">Design</span><span class="chip">Freelance</span></div>
             <a class="repo-link" href="https://github.com/codemastervy/design-video-portfolio" target="_blank" rel="noopener">View on GitHub →</a>
           </div>
-          <div class="project-card">
+          <div class="project-card" data-category="systems">
             <div class="project-thumb"></div>
             <h4>Portfolio Sync Action</h4>
             <div class="project-date">Aug 2026 to Present</div>
@@ -156,7 +156,7 @@
             <div class="chip-row"><span class="chip">Automation</span><span class="chip">Github Actions</span><span class="chip">Portfolio</span></div>
             <a class="repo-link" href="https://github.com/codemastervy/portfolio-sync-action" target="_blank" rel="noopener">View on GitHub →</a>
           </div>
-          <div class="project-card">
+          <div class="project-card" data-category="app-dev">
             <div class="project-thumb"></div>
             <h4>Floppy Run</h4>
             <div class="project-date">Aug 2026 to Present</div>
@@ -164,12 +164,12 @@
             <div class="chip-row"><span class="chip">C#</span></div>
             <a class="repo-link" href="https://github.com/codemastervy/floppy-run" target="_blank" rel="noopener">View on GitHub →</a>
           </div>
-          <div class="project-card">
-            <div class="project-thumb"></div>
+          <div class="project-card" data-category="systems">
+            <div class="project-thumb"><img src="assets/thumbs/liquid-os.png" alt="The Liquid OS desktop, running in QEMU" loading="lazy"></div>
             <h4>Liquid OS</h4>
             <div class="project-date">Sep 2026 to Present</div>
-            <p>A full Ubuntu 24.04 desktop OS with a glassmorphism liquid-glass GNOME theme — translucent windows, live blur, and a real installer</p>
-            <div class="chip-row"><span class="chip">Python</span></div>
+            <p>A bootable, installable Ubuntu 24.04 respin with a glassmorphism GNOME desktop, built end to end by a GitHub Actions workflow using live-build. The interesting part was the debugging: a one-character typo in casper.conf that dropped the live session into a BusyBox shell, a GNOME extension enabled with none of its code installed, and a "broken" image that turned out to be a VM starved of RAM. Released as a verified 2.4&nbsp;GB ISO.</p>
+            <div class="chip-row"><span class="chip">Linux Distro</span><span class="chip">Live Build</span><span class="chip">GitHub Actions</span></div>
             <a class="repo-link" href="https://github.com/codemastervy/liquid-os" target="_blank" rel="noopener">View on GitHub →</a>
           </div>
         </div>
