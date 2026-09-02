@@ -206,6 +206,22 @@
      whatever the source aspect ratio is, and the gradient above stays as the
      fallback for cards with no image. */
   .project-thumb img{width:100%; height:100%; object-fit:cover; object-position:top center; display:block;}
+  /* An app icon is square artwork, not a screenshot: cover would slice a
+     horizontal band out of the middle of the glyph, so contain it over a
+     backdrop picked to match the icon instead. */
+  .project-thumb--icon{background:linear-gradient(135deg,#1f93ab,#134b73);}
+  .project-thumb--icon img{object-fit:contain; object-position:center; padding:8px; box-sizing:border-box;}
+  /* Not every project has a screenshot to show -- a runbook, a CI workflow and
+     a leadership role have nothing to photograph. Those keep a graphic tile,
+     but a distinct one per card, so the page reads as designed rather than as
+     a row of identical empty boxes. */
+  .project-thumb--v1{background:linear-gradient(135deg, rgba(110,231,200,0.45), rgba(143,184,255,0.30));}
+  .project-thumb--v2{background:linear-gradient(135deg, rgba(255,158,212,0.40), rgba(143,184,255,0.28));}
+  .project-thumb--v3{background:linear-gradient(135deg, rgba(143,184,255,0.42), rgba(110,231,200,0.26));}
+  .project-thumb--v4{background:linear-gradient(160deg, rgba(91,230,163,0.38), rgba(255,158,212,0.24));}
+  .project-thumb--v5{background:linear-gradient(120deg, rgba(255,158,212,0.34), rgba(110,231,200,0.30));}
+  .project-thumb--v6{background:linear-gradient(200deg, rgba(143,184,255,0.36), rgba(255,158,212,0.32));}
+  .project-thumb--v7{background:linear-gradient(135deg, rgba(110,231,200,0.30), rgba(143,184,255,0.44));}
   /* Filtering sets the hidden attribute; make sure nothing overrides the UA
      default, since these are grid items. */
   .project-card[hidden]{display:none;}
