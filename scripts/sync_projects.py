@@ -18,6 +18,23 @@ MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun",
 
 GRID_CLOSE = "        </div>\n      </div>\n    </section>"
 
+THUMBS_DIR = PROJECTS_FILE.parent / "assets" / "thumbs"
+EMPTY_THUMB = '<div class="project-thumb"></div>'
+
+
+def thumb_html(name, title):
+    """The card's header image, if one has been dropped into assets/thumbs.
+
+    A card only gets an image when a file named after the repo exists there
+    (`assets/thumbs/<repo>.png`, `.jpg` or `.webp`). Nothing is downloaded:
+    add the file by hand and the next run wires it in.
+    """
+    for ext in ("png", "jpg", "jpeg", "webp"):
+        if (THUMBS_DIR / f"{name}.{ext}").is_file():
+            return (f'<div class="project-thumb"><img src="assets/thumbs/{name}.{ext}" '
+                    f'alt="{title} screenshot" loading="lazy"></div>')
+    return EMPTY_THUMB
+
 
 def fetch_repos():
     headers = {"Accept": "application/vnd.github+json", "User-Agent": USERNAME}
@@ -93,7 +110,7 @@ def build_card(repo):
     # blanket description sync would actively downgrade the page.
     return (
         f'          <div class="project-card" data-category="{infer_category(repo)}" data-autogen="true">\n'
-        f'            <div class="project-thumb"></div>\n'
+        f'            {thumb_html(name, title)}\n'
         f'            <h4>{title}</h4>\n'
         f'            <div class="project-date">{date}</div>\n'
         f'            <p>{desc}</p>\n'
@@ -139,6 +156,10 @@ def refresh_autogen_cards(html, repos_by_name):
             f'<div class="chip-row">{chips}</div>',
             new_body, count=1, flags=re.DOTALL,
         )
+        # An image added to assets/thumbs after the card was generated.
+        if EMPTY_THUMB in new_body:
+            new_body = new_body.replace(
+                EMPTY_THUMB, thumb_html(repo["name"], title_case(repo["name"])), 1)
         # Category can change as topics are added to a repo over time.
         new_attrs = re.sub(
             r'data-category="[^"]*"',
