@@ -2,6 +2,10 @@
 
 Personal portfolio site, hosted on GitHub Pages: **https://codemastervy.github.io**
 
+<img src="assets/screenshots/home-light.png" alt="Portfolio home page, light theme" width="820">
+
+<img src="assets/screenshots/projects-dark.png" alt="Projects page, dark theme" width="820">
+
 ## Pages
 
 | File | Section |
