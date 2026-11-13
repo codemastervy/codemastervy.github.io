@@ -1,12 +1,13 @@
 function toggleTheme(){
   const isLight = document.documentElement.classList.toggle('light');
-  document.getElementById('themeToggle').textContent = isLight ? '☀️' : '🌙';
+  // The button names the theme it switches to.
+  document.getElementById('themeToggle').textContent = isLight ? 'Dark' : 'Light';
   try { localStorage.setItem('theme', isLight ? 'light' : 'dark'); } catch(e) {}
 }
 document.addEventListener('DOMContentLoaded', () => {
   if (document.documentElement.classList.contains('light')) {
     const btn = document.getElementById('themeToggle');
-    if (btn) btn.textContent = '☀️';
+    if (btn) btn.textContent = 'Dark';
   }
 });
 /* Project filters.
